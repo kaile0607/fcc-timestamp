@@ -28,6 +28,7 @@ function isDate(input) {
   return !isNaN(dateObject) && dateObject instanceof Date;
 }
 
+// Return true if input is a valid timestamp, false otherwise
 function isValidUnixTimestamp(input) {
   const unixTimestamp = parseInt(input, 10);
   return !isNaN(unixTimestamp) && unixTimestamp >= 0;
